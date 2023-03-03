@@ -6,7 +6,7 @@ import {
     solarPanel,
     solarRoof,
     accessories,
-  } from "../assets";
+  } from "../public/assets/index";
   
   export const navLinks = [
     {
