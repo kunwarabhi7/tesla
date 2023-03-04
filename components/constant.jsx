@@ -78,11 +78,11 @@ import {
       desc: "Produce Clean Energy From Your Roof",
       button: ["Order Now", "Learn More"],
     },
-    {
-      id: "accessories",
-      img: accessories,
-      title: "Accessories",
-      desc: "",
-      button: ["Shop More", "Order Now"],
-    },
+    // {
+    //   id: "accessories",
+    //   img: accessories,
+    //   title: "Accessories",
+    //   desc: "",
+    //   button: ["Shop More", "Order Now"],
+    // },
   ];
