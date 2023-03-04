@@ -4,21 +4,24 @@ import { navLinks } from "./constant"
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between py-2 px-4">
+    <div className="flex items-center justify-between px-4 py-2 ">
       <div>
-        <Image src={Tesla}  />
+        <Image src={Tesla} className='object-contain w-28' />
       </div>
-      <div className="flex justify-evenly">
+      <div className="hidden md:flex gap-x-6 justify-evenly">
 {navLinks.map((nav)=>{
     return <div key={nav.id}>
+      <h1 className="hover:bg-gray-300 rounded-md py-[6px] px-2 font-medium cursor-pointer">
+
 {nav.title}
+      </h1>
     </div>
 })}
       </div>
-      <div className="flex">
-        <h1>Shop</h1>
-        <h1>Account</h1>
-        <h1>Menu</h1>
+      <div className="flex gap-x-4">
+        <h1 className="hover:bg-gray-300 rounded-md py-[6px] px-2 font-medium cursor-pointer">Shop</h1>
+        <h1 className="hover:bg-gray-300 rounded-md py-[6px] px-2 font-medium cursor-pointer">Account</h1>
+        <h1 className="hover:bg-gray-300 rounded-md py-[6px] px-2 font-medium cursor-pointer">Menu</h1>
       </div>
     </div>
   )
